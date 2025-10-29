@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0px 10px;
+  width: 100%;
+}
+
+.to-do-title {
+  font-family: "Arial";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.details,
+.work-area {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.task {
+  padding: 10px;
+}
+
+.date {
+  padding: 9px 10px;
+}
+
+.add-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.del-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
