@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced JS Function</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Rock Paper Scissors</h1>
+    <div class="selection-menu">
+      <div class="rock">
+        <button class="btn-rock" onclick="processMove('rock')">
+          <img src="pictures/rock-emoji.png" alt="Rock" />
+        </button>
+      </div>
+      <div class="paper" onclick="processMove('paper')">
+        <button class="btn-paper">
+          <img src="pictures/paper-emoji.png" alt="Paper" />
+        </button>
+      </div>
+      <div class="scissors" onclick="processMove('scissors')">
+        <button class="btn-scissors">
+          <img src="pictures/scissors-emoji.png" alt="Scissors" />
+        </button>
+      </div>
+    </div>
+    <div class="result">
+      <p class="result-txt">TIE</p>
+      <p class="result-visuals"></p>
+    </div>
+    <div class="scorecard"></div>
+    <div class="options">
+      <button
+        class="reset"
+        onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        "
+      >
+        Reset
+      </button>
+      <button class="autoplay" onclick="autoPlay()">Autoplay</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
